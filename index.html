@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Winter Scarves</title>
+
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- replace with your personal Font Awesome CDN link -->
+  <script src="https://use.fontawesome.com/???.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Hats</a></li>
+        <li><a href="#">Gloves</a></li>
+        <li><a href="#">Scarves</a></li>
+        <li class="cart-info">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+
+    <h1>Winter Wear Warehouse</h1>
+  </header>
+
+  <aside>
+    <form>
+      <label>Filter By:
+        <select name="filter">
+          <option value="">Choose One</option>
+          <option value="price">Price</option>
+          <option value="name">Name</option>
+        </select>
+      </label>
+
+      <input type="submit" value="Sort">
+    </form>
+  </aside>
+
+  <section>
+    <h2>Scarves</h2>
+
+    <div class="item-container">
+      <div class="item">
+        <h3 value="name">Northern Lights</h3>
+        <img src="images/northern-lights.jpg">
+        <p class="description">Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton.</p>
+        <p class="price">$29.99</p>
+        <!-- code template for a single item will go here -->
+      </div>
+        <div class="item">
+        <h3 value="name">Ombre Infinity</h3>
+        <img src="images/ombre-infinity.jpg">
+        <p class="description">A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic.</p>
+        <p class="price">$11.99</p>
+        <!-- code template for a single item will go here -->
+      </div>
+        <div class="item">
+        <h3 value="name">Fringed Plaid</h3>
+        <img src="images/fringed-plaid.jpeg">
+        <p class="description">Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic..</p>
+        <p class="price">$18.99</p>
+        <!-- code template for a single item will go here -->
+      </div>
+    </div>
+  </section>
+
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/scarves.js"></script>
+</body>
+</html>
