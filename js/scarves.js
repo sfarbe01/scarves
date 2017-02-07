@@ -1,7 +1,7 @@
 /* create an object with blank values*/
 var scarf = {
   "color": "",
-  "material":'',
+  "material":"",
   "price":"",
 }
 
@@ -21,23 +21,17 @@ if(color == ""){
   scarf.color = color;
 }
 
-var material = prompt("What material would you like for this scarf? Please select one of the following: wool, cashmere, alpaca, cotton, pashmina, mohair. If the selection you make is invalid, we will choose wool.");
+console.log(scarf);
+
+var material = prompt("What material would you like for this scarf? Please select one of the following: wool, cashmere, alpaca, cotton, pashmina, mohair. If the selection you make is invalid, we will choose wool.", "wool");
 scarf.material = material;
 if(material == ""){
   scarf.material = "wool";
-} else if (material == "wool"){
-  scarf.material = wool;
-} else if (material == "cotton"){
-  scarf.material = cotton;
-} else if (material == "pashmina"){
-  scarf.material = pashmina;
-} else if (material == "cashmere"){
-  scarf.material = cashmere; 
-} else if (material == "alpaca"){
-  scarf.material = alpaca; 
-} else if (material == "mohair"){
-  scarf.material = mohair; 
+} else {
+  scarf.material = material;
 }
+
+console.log(scarf);
 
 var price = prompt("How much are you willing to pay for your scarf?");
 scarf.price = price;
